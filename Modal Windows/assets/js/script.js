@@ -18,7 +18,7 @@ const closeModal = () => {
     overlay.classList.add("hidden");
 };
 
-//For loop, looping throught the 3 HTML modals and adding eventListener on them, followed by eventHandler openModal to open the modal on click.
+//A For loop to loop throught the 3 HTML modals and adding eventListener on them, followed by eventHandler openModal to open the modal on click.
 for (let i = 0; i < btnsOpenModal.length; i++) {
     btnsOpenModal[i].addEventListener("click", openModal);
 };
