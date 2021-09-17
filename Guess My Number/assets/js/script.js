@@ -21,7 +21,7 @@ document.querySelector(".check").addEventListener("click", function () {
         //When there is no input/empty;
         //document.querySelector(".message").textContent = "No number!";
         displayMessage("No number!");
-        //when input is greater than 20;
+        //When input is greater than 20;
     } else if (guess > 20) {
         displayMessage("Please enter a number between 0 and 20!");
         //document.querySelector(".message").textContent = "Please enter a number between 0 and 20!";
@@ -30,7 +30,7 @@ document.querySelector(".check").addEventListener("click", function () {
         displayMessage("Please enter a number between 0 and 20!")
         //document.querySelector(".message").textContent = "Please enter a number between 0 and 20!";
     }
-    //when player guesses the correct number;
+    //When player guesses the correct number;
     else if (guess === secretNumber) {
         displayMessage("Correct Number!")
         //document.querySelector(".message").textContent = "Correct Number!";
