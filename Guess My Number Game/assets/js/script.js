@@ -59,7 +59,7 @@ document.querySelector(".check").addEventListener("click", function () {
             document.querySelector(".score").textContent = 0;
         }
     }
-    //Commented out and not using due to DRY principle. Following was implementated with ternary operator on line 53;
+    //Commented out and not using due to DRY principle. The following was implementated with ternary operator on line 53;
     //when guess is too high
     // } else if (guess > secretNumber) {
     //     if (score > 1) {
