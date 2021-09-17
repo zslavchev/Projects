@@ -1,28 +1,22 @@
+//Get number of drum buttons;
 const numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
+//Loop through the number of buttons and attach eventListener, set functions makeSound and buttonAnimation;
 for (let i = 0; i < numberOfDrumButtons; i++) {
-
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-
     const buttonInnerHTML = this.innerHTML;
-
     makeSound(buttonInnerHTML);
-
     buttonAnimation(buttonInnerHTML);
-
   });
-
 }
 
+//Fetch pressed keys through the eventListener, so we can get the object for which key was pressed;
 document.addEventListener("keypress", function (event) {
-
   makeSound(event.key);
-
   buttonAnimation(event.key);
-
 });
 
-
+//Define makeSound function with a switch case, defining buttons, audio and attach play() method;
 function makeSound(key) {
   switch (key) {
     case "w":
@@ -65,14 +59,11 @@ function makeSound(key) {
   }
 }
 
+//Add animation for the pressed buttons;
 function buttonAnimation(currentKey) {
-
   const activeButton = document.querySelector("." + currentKey);
-
   activeButton.classList.add("pressed");
-
   setTimeout(function () {
     activeButton.classList.remove("pressed");
   }, 100);
-
 }
