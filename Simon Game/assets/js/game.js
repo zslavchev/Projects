@@ -1,12 +1,13 @@
-
+//Declare array for button colors;
 const buttonColours = ["red", "blue", "green", "yellow"];
 
+//Declare initial setup, variables and values;
 let gamePattern = [];
 let userClickedPattern = [];
-
 let started = false;
 let level = 0;
 
+//
 $(document).keypress(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
@@ -15,17 +16,21 @@ $(document).keypress(function () {
   }
 });
 
+//Declare function on buttons with various settings;
 $(".btn").click(function () {
-
   const userChosenColour = $(this).attr("id");
+  //Push the new value into the array;
   userClickedPattern.push(userChosenColour);
-
+  //Play sound for the chosen color;
   playSound(userChosenColour);
+  //Animate the press for the chose colour;
   animatePress(userChosenColour);
-
+  //Check the answer//
   checkAnswer(userClickedPattern.length - 1);
 });
 
+
+//Declare checkAnswer function;
 function checkAnswer(currentLevel) {
 
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
@@ -47,7 +52,7 @@ function checkAnswer(currentLevel) {
   }
 }
 
-
+//Declare function for sequences;
 function nextSequence() {
   userClickedPattern = [];
   level++;
@@ -60,6 +65,7 @@ function nextSequence() {
   playSound(randomChosenColour);
 }
 
+//Declare animation function for presses;
 function animatePress(currentColor) {
   $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
@@ -67,11 +73,14 @@ function animatePress(currentColor) {
   }, 100);
 }
 
+//Declare playsound function;
 function playSound(name) {
   const audio = new Audio("assets/sounds/" + name + ".mp3");
   audio.play();
 }
 
+//Declare New Game function;
+//Reset values;
 function startOver() {
   level = 0;
   gamePattern = [];
