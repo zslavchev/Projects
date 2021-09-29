@@ -1,0 +1,6 @@
+The Pig Game - https://zslavchevpiggame.netlify.app/
+Guess My Number - https://zslavchevguessmynumber.netlify.app/
+Drum Kit - https://zslavchevdrumkit.netlify.app/
+Simon Game - https://zslavchevsimongame.netlify.app/
+Dice Game - https://zslavchevdicegame.netlify.app/
+Modal Windows - https://zslavchevmodals.netlify.app/
