@@ -5,3 +5,4 @@ Simon Game - https://zslavchevsimongame.netlify.app/
 Dice Game - https://zslavchevdicegame.netlify.app/
 Modal Windows - https://zslavchevmodals.netlify.app/
 TinDog - https://zslavchevtindog.netlify.app/
+Keeper - https://zslavchevkeeper.netlify.app/
