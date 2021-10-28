@@ -25,7 +25,7 @@ $(".btn").click(function () {
   playSound(userChosenColour);
   //Animate the press for the chose colour;
   animatePress(userChosenColour);
-  //Check the answer//
+  //Check the answer;
   checkAnswer(userClickedPattern.length - 1);
 });
 
