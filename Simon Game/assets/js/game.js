@@ -50,7 +50,7 @@ function checkAnswer(currentLevel) {
 
     startOver();
   }
-}
+};
 
 //Declare function for sequences;
 function nextSequence() {
@@ -63,7 +63,7 @@ function nextSequence() {
 
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
-}
+};
 
 //Declare animation function for presses;
 function animatePress(currentColor) {
@@ -71,13 +71,13 @@ function animatePress(currentColor) {
   setTimeout(function () {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
-}
+};
 
 //Declare playsound function;
 function playSound(name) {
   const audio = new Audio("assets/sounds/" + name + ".mp3");
   audio.play();
-}
+};
 
 //Declare New Game function;
 //Reset values;
@@ -85,4 +85,4 @@ function startOver() {
   level = 0;
   gamePattern = [];
   started = false;
-}
+};
