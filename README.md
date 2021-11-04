@@ -4,6 +4,8 @@ Hi!
 
 Here you will find some of the projects that i worked on and finished.
 
+In netlify links for projects.txt file you can check all of the apps live, links are within the file.
+
 As per the list goes, you can read a short summary of the project.
 
 #1 Currency Exchange Tracker
