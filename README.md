@@ -6,7 +6,7 @@ Here you will find some of the projects that i worked on and finished.
 
 In https://github.com/zslavchev/Projects/blob/master/netlify%20links%20for%20projects.txt file you can check all of the apps live, links are within the file.
 
-As per the list goes, you can read a short summary of the project.
+As per the list goes, you can read a short summary of the projects.
 
 #1 Currency Exchange Tracker
 
